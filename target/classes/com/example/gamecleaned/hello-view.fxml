@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="702.0" prefWidth="918.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gamecleaned.GameController">
+    <children>
+        <Rectangle fx:id="redBox" arcHeight="5.0" arcWidth="5.0" fill="#ff301f" height="191.0" layoutX="265.0" layoutY="182.0" onMouseClicked="#redBoxClicked" stroke="BLACK" strokeType="INSIDE" width="191.0" />
+        <Rectangle fx:id="blueBox" arcHeight="5.0" arcWidth="5.0" fill="#24a8f0" height="191.0" layoutX="455.0" layoutY="372.0" onMouseClicked="#blueBoxClicked" stroke="BLACK" strokeType="INSIDE" width="191.0" />
+        <Rectangle fx:id="greenBox" arcHeight="5.0" arcWidth="5.0" fill="#34ee37" height="191.0" layoutX="265.0" layoutY="372.0" onMouseClicked="#greenBoxClicked" stroke="BLACK" strokeType="INSIDE" width="191.0" />
+        <Rectangle fx:id="yellowBox" arcHeight="5.0" arcWidth="5.0" fill="#fff51f" height="191.0" layoutX="455.0" layoutY="182.0" onMouseClicked="#yellowBoxClicked" stroke="BLACK" strokeType="INSIDE" width="191.0" />
+        <Text fx:id="sequenceID" layoutX="65.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SequenceID" wrappingWidth="175.97854804992676" />
+        <Text layoutX="280.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Current Score : " />
+        <Text layoutX="467.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Highest Score : " />
+        <Text fill="#d72222" layoutX="343.0" layoutY="302.0" onMouseClicked="#redBoxClicked" strokeType="OUTSIDE" strokeWidth="0.0" text="1">
+            <font>
+                <Font size="75.0" />
+            </font>
+        </Text>
+        <Text fill="#e8e237" layoutX="530.0" layoutY="304.0" onMouseClicked="#yellowBoxClicked" strokeType="OUTSIDE" strokeWidth="0.0" text="2">
+            <font>
+                <Font size="75.0" />
+            </font>
+        </Text>
+        <Text fill="#50d738" layoutX="342.0" layoutY="491.0" onMouseClicked="#greenBoxClicked" strokeType="OUTSIDE" strokeWidth="0.0" text="3">
+            <font>
+                <Font size="75.0" />
+            </font>
+        </Text>
+        <Text fill="#3b91d4" layoutX="525.0" layoutY="492.0" onMouseClicked="#blueBoxClicked" strokeType="OUTSIDE" strokeWidth="0.0" text="4">
+            <font>
+                <Font size="75.0" />
+            </font>
+        </Text>
+        <TextField fx:id="currentScoreIndicator" layoutX="376.0" layoutY="129.0" prefHeight="27.0" prefWidth="59.0" />
+        <TextField fx:id="highestScoreIndicator" layoutX="560.0" layoutY="129.0" prefHeight="27.0" prefWidth="59.0" text="0" />
+        <Button fx:id="bttnCheck" layoutX="396.0" layoutY="586.0" mnemonicParsing="false" onMouseClicked="#checkPlayerSequence" text="Confirm Sequence" />
+        <Text layoutX="420.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Memory Game" />
+        <Button fx:id="mainMenuBttn" layoutX="751.0" layoutY="653.0" mnemonicParsing="false" onAction="#switchToMainMenu" text="Switch to Main Menu" />
+        <Button fx:id="startSequenceBttn" layoutX="415.0" layoutY="640.0" mnemonicParsing="false" onAction="#startMemoryBttnClicked" text="Start Game" />
+    </children>
+</Pane>

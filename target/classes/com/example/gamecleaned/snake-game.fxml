@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gamecleaned.GameController">
+    <children>
+        <Button fx:id="mainMenuBttn" layoutX="447.0" layoutY="363.0" mnemonicParsing="false" onAction="#switchToMainMenu" prefHeight="11.0" prefWidth="142.0" text="Switch to Main Menu">
+            <font>
+                <Font size="10.0" />
+            </font>
+        </Button>
+        <Text layoutX="158.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Current Score: " />
+        <TextField fx:id="currentScoreIndicator" layoutX="243.0" layoutY="23.0" prefHeight="26.0" prefWidth="56.0" />
+        <Text layoutX="302.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Highest Score:" />
+        <TextField fx:id="highestScoreIndicator" layoutX="387.0" layoutY="23.0" prefHeight="26.0" prefWidth="56.0" />
+        <Button fx:id="startSnakeBttn" layoutX="14.0" layoutY="360.0" mnemonicParsing="false" onAction="#startSnakeBttnClicked" onKeyPressed="#keyPressed" prefHeight="15.0" prefWidth="79.0" text="Start Game" />
+    </children>
+</AnchorPane>
